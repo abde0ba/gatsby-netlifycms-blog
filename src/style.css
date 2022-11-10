@@ -1,4 +1,15 @@
 /* CSS Custom Properties Definitions */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swa');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+
+
 
 :root {
   --maxWidth-none: "none";
@@ -7,7 +18,7 @@
   --maxWidth-md: 28rem;
   --maxWidth-lg: 32rem;
   --maxWidth-xl: 36rem;
-  --maxWidth-2xl: 42rem;
+  --maxWidth-2xl: 65rem;
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
@@ -81,6 +92,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+ 
 }
 
 footer {
@@ -120,7 +132,7 @@ h6 {
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
+  /*color: var(--color-heading-black)*/
 }
 
 h2 {
@@ -230,7 +242,9 @@ table thead tr th {
 /* Link */
 
 a {
-  color: var(--color-primary);
+  /*color: var(--color-primary);*/
+ /* color: black !important;*/
+  text-decoration: none !important;
 }
 
 a:hover,
@@ -240,10 +254,32 @@ a:focus {
 
 /* Custom classes */
 
+h1, a, h3, p {
+  color: black !important;
+ 
+}
+body {
+  background-color: white !important;
+}
+
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
   padding: var(--spacing-10) var(--spacing-5);
+}
+.navbar-wrapper {
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper);
+  
+}
+
+.nav-links a {
+  font-size: 25px;
+  margin: 10px;
+}
+.nav-links li:hover {
+  color:white;
+  transition: 0.6s all;
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -254,9 +290,65 @@ a:focus {
   margin-bottom: var(--spacing-12);
 }
 
+.navbar-container a {
+  text-decoration: none;
+  /*color : black*/
+}
+.Logo h1{
+  font-family: 'Poppins', sans-serif;
+}
+
+.trending-section h1{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+.slider-section {
+  height: 300px;
+}
+.slider-img {
+  max-width:300px !important;
+  height: 200px !important;
+  top: 20% !important;
+  margin-left: 10%;
+  border-radius: 10px;
+}
+
+.slider-section h3, .slider-section p {
+  /*color: black;*/
+  text-align: left;
+  margin-left: 50%;
+ 
+}
+.slider-section h3 {
+  font-family: 'Roboto', sans-serif;
+}
+.slider-section p {
+  font-family: 'Work Sans', sans-serif;
+}
+.caption-section {
+  position: relative !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  right: 0 !important;
+  left: -5% !important;
+  width: 90%;
+  top: -100%;
+}
+
 .main-heading {
   font-size: var(--fontSize-7);
   margin: 0;
+}
+
+.card-section {
+  box-shadow: none !important;
+}
+.card-section img {
+  border-radius: 5px;
+}
+
+.card-section p {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .post-list-item {
@@ -319,8 +411,57 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
-/* Media queries */
+.contact-section button{
+  left: 19px;
+}
+.contact-section input {
+  width: 500px;
+  
+}
+.contact-section > div > form > div:nth-child(n) > div > div > div, .contact-section > div > form > div:nth-child(3)  {
+  margin: 20px;
+  width: 700px;
+}
+.contact-section textarea {
+  height: 400px;
+  margin: 20px;
+}
 
+.footer-section {
+  background-color: #DBDCDE;
+  text-align: center;
+
+}
+.footer-section p {
+  
+}
+.footer-links a{
+  margin: 20px;
+  border-bottom: 0.5px solid black;
+  font-family: 'Roboto', sans-serif;
+}
+/* Media queries */
+@media (max-width: 900px) {
+  .slider-img {
+    filter: brightness(45%);
+    max-width: 80% !important;
+    height: 250px !important;
+    top: 0 !important;
+
+  }
+  .caption-section{
+    top: -170% !important;
+    left: -15% !important;
+    font-size: 10px;
+  }
+  .caption-section h3, .caption-section p {
+    color: white !important;
+  }
+}
+
+@media (max-width: 500px) {
+  
+}
 @media (max-width: 42rem) {
   blockquote {
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
@@ -330,4 +471,25 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+  
+  .contact-section input {
+    width: 100%;
+    
+  }
+  .contact-section > div > form > div:nth-child(n) > div > div > div, .contact-section > div > form > div:nth-child(3)  {
+    margin: 20px;
+    width: 100%;
+  }
+  .contact-section textarea {
+    height: 400px;
+    margin: 20px;
+  }
+  .caption-section{
+    left: -20% !important;
+    font-size: 10px;
+  }
+  .caption-section h3, .caption-section p {
+    color: white !important;
+  }
+  
 }
