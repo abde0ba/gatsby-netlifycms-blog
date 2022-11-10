@@ -1,5 +1,6 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 media_folder: "content/blog/images/uploads"
 
 collections:
@@ -15,5 +16,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - { label: "Featured Image", name: "featuredImage", widget: image }
       - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+=======
+>>>>>>> 9daa04e84acb9e91525c076d7ea49080f3874703
 =======
 >>>>>>> 9daa04e84acb9e91525c076d7ea49080f3874703
