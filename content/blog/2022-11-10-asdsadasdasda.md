@@ -4,6 +4,6 @@ title: asdsadasdasda
 date: 2022-11-10T16:28:56.095Z
 description: asdasdsadasdasdasdasdasdasasd
 featuredpost: false
-featuredimage: /images/uploads/renault-express-2021-1.jpg
+featuredImage: ./images/l-intro-1645231221.jpg
 ---
 asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd asdasdsadasdasdasdasdasdasasd
