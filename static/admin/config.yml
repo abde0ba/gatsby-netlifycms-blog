@@ -17,3 +17,4 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - { label: "Featured Image", name: "featuredImage", widget: image }
       - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+s
