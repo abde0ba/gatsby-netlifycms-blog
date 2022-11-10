@@ -2,16 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Abde Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Abde Ba`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `A blog built using Gatsby.`,
   },
-  plugins: [ `gatsby-plugin-netlify-cms`,
+  plugins: [
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -118,5 +113,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-netlify'
   ],
 }
